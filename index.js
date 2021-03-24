@@ -78,6 +78,10 @@ function Airplane(name) {
   Car.prototype.fill = function(gallons) {
     this.tank += gallons
   }
+  // Car.prototype.drive = function(distance) {
+  //   let miles = 0
+  //   this.tank += distance
+  // }
   
   
   /*
@@ -92,12 +96,11 @@ function Airplane(name) {
    this.age = age
    this.favoriteToy = favoriteToy
   }
+
   Baby.prototype = Object.create(Person.prototype)
   Baby.prototype.play = function(){
     return `Playing with ${this.favoriteToy}`
   }
- 
-  
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
