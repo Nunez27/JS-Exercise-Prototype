@@ -76,7 +76,7 @@ function Airplane(name) {
     this.odometer = 0
   }
   Car.prototype.fill = function(gallons) {
-    this.tank += gallons
+    return this.tank += gallons
   }
   // Car.prototype.drive = function(distance) {
   //   let miles = 0
@@ -96,7 +96,6 @@ function Airplane(name) {
    this.age = age
    this.favoriteToy = favoriteToy
   }
-
   Baby.prototype = Object.create(Person.prototype)
   Baby.prototype.play = function(){
     return `Playing with ${this.favoriteToy}`
